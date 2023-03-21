@@ -1,0 +1,574 @@
+@media (max-width: 1400px) {
+  .lightbox .lightbox__zoom_content .lightbox__zoom_img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1320px) {
+
+  #header .container,
+  #footer .container {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .benefits__container {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 960px) {
+  .sc_item {
+    position: relative;
+    align-items: stretch;
+  }
+
+  .sc_item__info_container {
+    margin-left: 0;
+  }
+
+  .sc_item__rating {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    background: rgba(255, 255, 255, 0.95);
+    flex-direction: row;
+    min-width: none;
+    min-height: none;
+    height: auto;
+  }
+
+  .sc_item__info {
+    padding-top: var(--m1);
+    padding-bottom: var(--m1);
+  }
+
+  .sc_item__rating_total {
+    margin-right: 5px;
+  }
+
+  .sc_item__rating_total .summary {
+    font-size: 18px;
+  }
+
+  .sc_item__rating_total .from {
+    font-size: 16px;
+  }
+
+  .sc_item__rating_title {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+
+  #header .container,
+  #footer .container {
+    padding: 0 30px;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+  .navigation {
+    position: fixed;
+    left: 0;
+    background: #353535;
+    margin-top: 1px;
+    top: var(--header_height);
+    height: 100%;
+    padding: 25px 0;
+    max-width: 280px;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: .4s;
+
+    ul {
+      flex-direction: column;
+      justify-content: space-between;
+      row-gap: 15px;
+    }
+
+    li {
+      background: #4d4c4c;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+    }
+  }
+
+  .navigation[active] {
+    transform: translateX(0);
+  }
+
+  .navigation[active] .navigation__overlay {
+    display: block;
+  }
+}
+
+@media (max-width: 950px) {
+  .gameplay__row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #gameplay .gameplay__details p {
+    max-width: none;
+  }
+
+  .gameplay__details {
+    margin-top: 25px;
+  }
+
+  .lightbox .lightbox__zoom_content .lightbox__zoom_img {
+    transform: translateY(20px);
+  }
+}
+
+@media (max-width: 850px) {
+  .sc_item__info_data_row {
+    column-gap: 0px;
+  }
+
+  .sc_item__info_col:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .sc_item__info_bonus_count {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 775px) {
+  .promo__info_wrap {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --m3: 30px;
+  }
+
+  .table__responsive {
+    max-width: 660px;
+
+    tr td:first-child {
+      border-left: none;
+    }
+  }
+
+  .content {
+    padding: 30px 30px 50px;
+  }
+
+  .promo__general {
+    column-gap: var(--m3);
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .start_popup p {
+    text-align: left;
+  }
+
+  .faq__item_title h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 750px) {
+  .sc_item {
+    flex-direction: column;
+    align-items: center;
+    padding: var(--m1);
+  }
+
+  .sc_item__rating {
+    top: 10px;
+  }
+
+  .sc_item__info_target_row {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 740px) {
+  .table__responsive {
+    table {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 705px) {
+  .promo__info strong {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .promo__preview {
+    float: left;
+  }
+
+  .promo__info_container {
+    margin: 25px 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .manual__symbol {
+    flex-direction: column;
+  }
+
+  #video iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}
+
+@media (max-width: 565px) {
+  .benefit__img {
+    img {
+      width: 100%;
+    }
+  }
+
+  #footer {
+    height: auto;
+    padding: 20px 0;
+
+    .container {
+      flex-direction: column;
+      row-gap: 15px;
+    }
+  }
+
+  .promo__general {
+    flex-direction: column;
+  }
+
+  .promo__info_wrap {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .promo__info strong {
+    margin-left: var(--m1);
+  }
+
+  .promo__info {
+    margin-top: var(--m2);
+  }
+
+  .video__desc .btn {
+    margin: 0 auto;
+    height: 60px;
+  }
+
+  .lightbox .lightbox__thumb {
+    max-width: 33%;
+
+    picture, img {
+      aspect-ratio: 16/9;
+    }
+  }
+
+  .table__responsive {
+    max-width: 600px;
+  }
+
+  .sc_item__info_col:nth-child(3) {
+
+    .sc__info_details_content {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .sc_item__info_target_row {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .sc_item__info {
+    padding-bottom: 0;
+  }
+
+  .sc_item__info_bonus {
+    align-self: start;
+  }
+
+  .sc_item__btn {
+    margin-top: 15px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 520px) {
+  .start_popup {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 490px) {
+  .promo__preview {
+    display: flex;
+    justify-content: center;
+  }
+
+  .promo__info_wrap {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width: 480px) {
+  .sc_item__info_data_row {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .sc_item__info_col {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .sc_item__info_wrap {
+    margin-top: 0;
+  }
+
+  .sc_item__btn {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 475px) {
+  .buttons_container {
+    column-gap: 40px;
+  }
+
+  .promo__info strong {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 440px) {
+
+  :root {
+    --header_height: 60px;
+  }
+
+  #header .container,
+  #footer .container {
+    padding: 0 15px;
+  }
+
+  #header .btn_play {
+    max-width: 130px;
+    height: 40px;
+
+    img {
+      display: none;
+    }
+
+    span {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .content {
+    padding: 20px 15px 50px;
+  }
+}
+
+@media (max-width: 410px) {
+  .sc_item__info_col:nth-child(2) {
+
+    .sc__info_details_content {
+      transform: translateX(-30%);
+    }
+  }
+
+  .sc_item__info_col:nth-child(1) {
+
+    .sc__info_details_content {
+      transform: translateX(-20%);
+    }
+  }
+
+  .sc_item__info_col:nth-child(3) {
+
+    .sc__info_details_content {
+      transform: translateX(-80%);
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .navigation {
+    max-width: 100%;
+    padding-top: 120px;
+  }
+
+  .navigation li a {
+    font-size: 16px;
+  }
+
+  .content .btn_play {
+    width: 100%;
+  }
+
+  .video__desc .btn {
+    max-width: 100%;
+  }
+
+  .promo__info_wrap {
+    row-gap: 15px;
+  }
+
+  .promo__info_text {
+    line-height: 20px;
+  }
+
+  .title_section {
+    text-align: center;
+  }
+
+  #table .title_section {
+    align-self: center;
+  }
+
+  .specification__row h3 {
+    text-align: center;
+  }
+
+  .gameplay__benefit {
+    align-items: start;
+  }
+
+  .faq__item_content {
+    text-align: justify;
+  }
+
+  #gameplay .gameplay__details p {
+    width: 100%;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  .manual__symbol_title {
+    text-align: center;
+  }
+
+  .start_popup {
+    width: 100%;
+    border-radius: 0px;
+
+    p {
+      max-width: none;
+    }
+
+    .start_popup__bg {
+      max-width: 140px;
+    }
+
+    .start_popup__promocode {
+      margin-top: 40px;
+    }
+
+    .start_popup__promocode_title {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      transform: translateY(-150%);
+      font-size: 14px;
+      color: #F2D016;
+    }
+  }
+
+  .start_popup .start_popup__promocode .promocode {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .start_popup {
+    padding: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .start_popup__close_btn {
+      right: 15px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .sc_show__btn_wrap .btn {
+    width: 100%;
+  }
+
+  .sc_item__info_col {
+    line-height: 25px;
+  }
+
+  .sc_item__info_col:nth-child(1) {
+
+    .sc__info_details_content {
+      transform: translateX(-50%);
+    }
+  }
+
+  .sc_item__info_col:nth-child(3) {
+    flex-direction: column;
+    align-items: start;
+
+    .sc__info_details_content {
+      transform: translateX(-15%);
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .buttons_container {
+    column-gap: 25px;
+  }
+
+  .faq__item[active] .faq__item_content {
+    padding: 15px;
+  }
+
+  .faq__item_title h4 {
+    font-size: 14px;
+  }
+
+  .sc_item__info_col:nth-child(2) {
+
+    .sc__info_details_content {
+      transform: translateX(-40%);
+    }
+  }
+}

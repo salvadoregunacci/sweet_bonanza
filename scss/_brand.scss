@@ -1,0 +1,278 @@
+$border : #B8B8B8;
+
+#nav_brand_page {
+  display: flex;
+}
+
+#header {
+  .btn_play {
+    display: flex;
+  }
+
+  .select_play {
+    display: none;
+  }
+}
+
+#nav_brand_page {
+  display: none;
+}
+
+body[data-page-brand] {
+  #header {
+    .btn_play {
+      display: none;
+    }
+
+    .select_play {
+      display: flex;
+    }
+  }
+
+  #nav_main_page {
+    display: none;
+  }
+
+  #nav_brand_page {
+    display: flex;
+  }
+
+  #main .container {
+    max-width: 1250px;
+    background: none;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  #promo {
+    background: #f1f1f1;
+    border: none;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+}
+
+
+// ===========================
+// ===========================
+//  GENERAl
+// ===========================
+// ===========================
+
+.breadcrumbs {
+  .breadcrumbs__item {
+    text-decoration: none;
+    color: $black;
+
+    &:hover {
+      color: $green_active;
+    }
+  }
+
+  .breadcrumbs__separator {
+    display: inline-block;
+    width: 8px;
+    height: 9px;
+    background: url("../img/page_brand/separator.svg") center center / cover no-repeat;
+    margin: 0 5px;
+  }
+}
+
+.select {
+  position: relative;
+}
+
+.select__header {
+  max-width: 230px;
+  background-color: $green;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 25px;
+  cursor: pointer;
+  transition: .2s;
+
+  &:hover {
+    background-color: $green_active;
+  }
+
+  img {
+    width: 15px;
+    height: 7px;
+    transition: .3s;
+  }
+}
+
+.select__items {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  background: #fff;
+  padding: 0px 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: .3s;
+  box-sizing: border-box;
+}
+
+.select__item {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black;
+  display: inline-block;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.select__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.select[active] {
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
+
+  .select__header img {
+    transform: rotate(180deg);
+  }
+
+  .select__items {
+    max-height: 500px;
+    padding: 15px 10px;
+  }
+}
+
+.anim_btn {
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    left: 0;
+    top: 0;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    opacity: .3;
+    transform: translateX(-90%) rotate(45deg);
+    transition: .8s;
+  }
+
+  &:hover::after {
+    transform: translateX(90%) rotate(45deg);
+  }
+}
+
+// ===========================
+// ===========================
+//  ###### GENERAl
+// ===========================
+// ===========================
+
+body[data-page-brand] {
+
+  h2.title_section {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  .offer__wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+  }
+
+  .offer__logo_wrap {
+    display: inline-block;
+    position: relative;
+  }
+
+  .offer_rating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(17px, -9px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    padding: 6px;
+    background: $black;
+
+    .offer_rating__total {
+      color: #fff;
+      transform: translateY(1px);
+      font-weight: 600;
+    }
+  }
+
+  .offer__body {
+    max-width: 750px;
+  }
+
+  #promo .offer__desc {
+    font-size: 14px;
+  }
+
+  #offer {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .offer__title {
+      color: $black;
+    }
+  }
+
+  .offer_btn .anim_btn{
+    width: 220px;
+  }
+
+  .db_table {
+    border-collapse: collapse;
+    font-size: 14px;
+    border: 1px solid $border;
+
+    tr {
+      display: block;
+    }
+
+    td {
+      padding: 15px 20px;
+      border-bottom: 1px solid $border;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    tr:nth-child(even) {
+      background: #f5f5f5;
+    }
+
+    .db_title{
+      width: 200px;
+      font-weight: 500;
+    }
+
+    .db_content {
+      max-width: 325px;
+      font-weight: 700;
+      width: 325px;
+    }
+
+    .db_content:nth-child(2) {
+      border-right: 1px solid $border;
+    }
+  }
+}
