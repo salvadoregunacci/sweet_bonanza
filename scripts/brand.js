@@ -3,6 +3,7 @@
 // =========================
 
 const $selects = document.querySelectorAll('.select');
+const $replyReviews = document.querySelectorAll('.review[reply]');
 
 // =========================
 // Events
@@ -11,6 +12,15 @@ const $selects = document.querySelectorAll('.select');
 if ($selects) {
   $selects.forEach(select => {
     select.addEventListener("click", selectShowController);
+  });
+}
+if ($replyReviews) {
+  $replyReviews.forEach(reply => {
+    const $replyName = reply.querySelector(".review__reply span");
+
+    if ($replyName) {
+      $replyName.textContent = reply.getAttribute("reply").trim() || "";
+    }
   });
 }
 
