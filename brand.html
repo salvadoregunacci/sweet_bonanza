@@ -16,6 +16,7 @@
 
 <body data-page-brand>
   <div id="general" class="sr-only"></div>
+
   <!-- =========================== -->
   <!-- HEADER -->
   <!-- =========================== -->
@@ -815,7 +816,7 @@
         <h2 class="title_section">Отзывы</h2>
 
         <div class="reviews__wrap">
-          <div class="review">
+          <div class="review" review_id="1">
             <div class="review__icon_wrap">
               <img src="./img/page_brand/user.svg" alt="user icon">
             </div>
@@ -862,7 +863,7 @@
             </div>
           </div>
           <!-- ---- -->
-          <div class="review">
+          <div class="review" review_id="2">
             <div class="review__icon_wrap">
               <img src="./img/page_brand/user.svg" alt="user icon">
             </div>
@@ -910,7 +911,7 @@
             </div>
           </div>
           <!-- ---- -->
-          <div class="review" reply="Андрей">
+          <div class="review" reply="Андрей" review_id="3">
             <div class="review__icon_wrap">
               <img src="./img/page_brand/user.svg" alt="user icon">
             </div>
@@ -958,7 +959,7 @@
             </div>
           </div>
           <!-- ---- -->
-          <div class="review">
+          <div class="review" review_id="4">
             <div class="review__icon_wrap">
               <img src="./img/page_brand/user.svg" alt="user icon">
             </div>
@@ -1008,6 +1009,9 @@
         </div>
         <!-- ------------ -->
         <form action="#" class="review__form" method="POST">
+          <input type="hidden" name="type" class="review__type" value="comment">
+          <input type="hidden" name="reply_id" class="review__reply_id">
+
           <div class="review__form_wrap">
             <div class="review__form_label">Комментарий *</div>
 
@@ -1044,7 +1048,7 @@
 
           <div class="review__form_row">
             <div class="review__form_agree">
-              <input type="checkbox" name="agree" id="agree">
+              <input required type="checkbox" name="agree" id="agree" checked>
               <label for="agree">Я согласен на обработку персональных данных</label>
             </div>
 
@@ -1055,6 +1059,40 @@
       <!-- /#reviews -->
     </div>
   </main>
+
+  <!-- =========================== -->
+  <!-- STICKY BLOCK -->
+  <!-- =========================== -->
+  <section id="sticky">
+    <div class="container">
+      <div class="sticky__wrap">
+        <img src="./img/page_brand/logo.webp" alt="brand logotype" class="sticky__icon">
+        <div class="sticky__info">
+          <h3 class="sticky__title">Bonanza Casino</h3>
+          <div class="sticky__rating_wrap">
+            <div class="sticky__rating">
+              <div class="sticky__rating_star"></div>
+              <div class="sticky__rating_star"></div>
+              <div class="sticky__rating_star"></div>
+              <div class="sticky__rating_star"></div>
+              <div class="sticky__rating_star" empty></div>
+            </div>
+            <div class="sticky__rating_total">4 / 5</div>
+          </div>
+        </div>
+      </div>
+      <!-- ---- -->
+      <a href="#" class="orange_btn anim_btn" aria-label="кнопка играть">Играть сейчас</a>
+
+      <div class="sticky__close_btn">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.5 1L19 18.5" stroke="white" stroke-width="2" />
+          <path d="M19 1L1.5 18.5" stroke="white" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+  </section>
+  <!-- /#sticky -->
 
   <!-- =========================== -->
   <!-- FOOTER -->

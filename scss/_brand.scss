@@ -716,7 +716,8 @@ body[data-page-brand] {
     }
   }
 
-  .review__header , .review__footer{
+  .review__header,
+  .review__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -797,11 +798,11 @@ body[data-page-brand] {
     display: inline-block;
   }
 
-  .rating-area:not(:checked) > input {
+  .rating-area:not(:checked)>input {
     display: none;
   }
 
-  .rating-area:not(:checked) > label {
+  .rating-area:not(:checked)>label {
     float: right;
     width: 34px;
     padding: 0;
@@ -810,28 +811,28 @@ body[data-page-brand] {
     color: lightgrey;
   }
 
-  .rating-area:not(:checked) > label:before {
+  .rating-area:not(:checked)>label:before {
     content: '★';
   }
 
-  .rating-area > input:checked ~ label {
+  .rating-area>input:checked~label {
     color: gold;
   }
 
-  .rating-area:not(:checked) > label:hover,
-  .rating-area:not(:checked) > label:hover ~ label {
+  .rating-area:not(:checked)>label:hover,
+  .rating-area:not(:checked)>label:hover~label {
     color: gold;
   }
 
-  .rating-area > input:checked + label:hover,
-  .rating-area > input:checked + label:hover ~ label,
-  .rating-area > input:checked ~ label:hover,
-  .rating-area > input:checked ~ label:hover ~ label,
-  .rating-area > label:hover ~ input:checked ~ label {
+  .rating-area>input:checked+label:hover,
+  .rating-area>input:checked+label:hover~label,
+  .rating-area>input:checked~label:hover,
+  .rating-area>input:checked~label:hover~label,
+  .rating-area>label:hover~input:checked~label {
     color: gold;
   }
 
-  .rate-area > label:active {
+  .rate-area>label:active {
     position: relative;
   }
 
@@ -922,7 +923,8 @@ body[data-page-brand] {
     align-items: center;
     column-gap: 6px;
 
-    input, label {
+    input,
+    label {
       cursor: pointer;
     }
 
@@ -944,5 +946,99 @@ body[data-page-brand] {
     &:hover {
       background: $green_active;
     }
+  }
+
+  .review__form[is_reply] {
+    .review__rating_wrap {
+      display: none;
+    }
+  }
+
+  #sticky {
+    position: fixed;
+    bottom: 0;
+    background: rgba(53, 53, 53, 0.7);
+    width: 100%;
+    overflow: visible;
+    transform: translateY(110%);
+    transition: .4s;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow: visible;
+      max-height: 90px;
+    }
+  }
+
+  #sticky[active] {
+    transform: translateY(0%);
+  }
+
+  .sticky__close_btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+
+  .sticky__wrap {
+    height: 105px;
+    max-width: 515px;
+    width: 100%;
+    background: url("../img/page_brand/sticky_bg.svg") center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    overflow: visible;
+  }
+
+  .sticky__icon {
+    margin-left: 20px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .sticky__title {
+    font-size: 20px;
+    font-weight: 900;
+    color: $green;
+  }
+
+  .sticky__rating_wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 10px;
+  }
+
+  .sticky__rating {
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+  }
+
+  .sticky__rating_star {
+    width: 19px;
+    height: 18px;
+    background: url("../img/star.svg") center center / cover no-repeat;
+  }
+
+  .sticky__rating_star[empty] {
+    background: url("../img/page_brand/border_star.svg") center center / cover no-repeat;
+  }
+
+  .sticky__rating_total {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .sticky__info {
+    transform: translateY(-3px);
+  }
+
+  .sticky__close_btn {
+    cursor: pointer;
   }
 }

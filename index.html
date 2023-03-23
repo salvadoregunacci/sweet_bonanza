@@ -39,6 +39,7 @@
 <body id="general">
     <!-- =========================== -->
     <!-- HEADER -->
+    <!-- =========================== -->
     <header id="header">
         <div class="container">
             <div class="header__burger" aria-label="кнопка открыть навигацию">
@@ -46,11 +47,18 @@
             </div>
             <!-- --------- -->
             <nav class="navigation" aria-label="навигация по сайту">
-                <ul>
+                <ul id="nav_main_page">
                     <li><a href="#gameplay">О игре</a></li>
                     <li><a href="#table">Таблица выплат</a></li>
                     <li><a href="#benefits">Фриспины и бонусы</a></li>
                     <li><a href="#video">Видеообзор</a></li>
+                </ul>
+
+                <ul id="nav_brand_page">
+                    <li><a href="/">На главную</a></li>
+                    <li><a href="#">Плюсы и минусы</a></li>
+                    <li><a href="#">Частые вопросы</a></li>
+                    <li><a href="#">Отзывы</a></li>
                 </ul>
                 <div class="navigation__overlay"></div>
             </nav>
@@ -76,6 +84,19 @@
                     <img src="./img/triangle.svg" alt="icon play">
                     <span>Играть</span>
                 </a>
+                <!-- ----- -->
+                <div class="select select_play">
+                    <div class="select__header">
+                        <span>Играть онлайн</span>
+                        <img src="./img/chevron_dropmenu.svg" alt="chevron">
+                    </div>
+                    <!-- -- -->
+                    <div class="select__items">
+                        <a href="#" class="select__item">Играть sweet bonanza 1win </a>
+                        <a href="#" class="select__item">Играть sweet bonanza pin-up </a>
+                        <a href="#" class="select__item">Играть sweet bonanza FairSpin</a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>

@@ -1,14 +1,35 @@
+@media (max-width: 1440px) {
+  body[data-page-brand] {
+    #main .container, .container {
+      max-width: 1100px;
+    }
+  }
+
+  body[data-page-brand] .offer__body {
+    max-width: 650px;
+  }
+}
+
 @media (max-width: 1400px) {
   .lightbox .lightbox__zoom_content .lightbox__zoom_img {
     max-width: 90%;
   }
 }
 
+
 @media (max-width: 1320px) {
 
   #header .container,
   #footer .container {
     padding: 0 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  body[data-page-brand] {
+    #main .container, .container {
+      max-width: 1000px;
+    }
   }
 }
 
