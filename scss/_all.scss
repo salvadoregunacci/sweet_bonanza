@@ -803,3 +803,33 @@
   transform: rotate(-45deg);
   bottom: 11px;
 }
+
+// ===========================
+
+.sc_item {
+  padding-left: 15px;
+  padding-top: 15px;
+  align-items: start;
+}
+
+.sc_item__info {
+  padding-top: 0;
+}
+
+.sc_item__info_target_row {
+  flex-direction: column;
+  row-gap: 25px;
+  margin-top: 15px;
+}
+
+.sc_item__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  justify-content: end;
+
+  .gray_btn {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

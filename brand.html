@@ -36,9 +36,9 @@
 
         <ul id="nav_brand_page">
           <li><a href="/">На главную</a></li>
-          <li><a href="#">Плюсы и минусы</a></li>
-          <li><a href="#">Частые вопросы</a></li>
-          <li><a href="#">Отзывы</a></li>
+          <li><a href="#plus_minus">Плюсы и минусы</a></li>
+          <li><a href="#faq">Частые вопросы</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
         </ul>
         <div class="navigation__overlay"></div>
       </nav>
@@ -67,14 +67,14 @@
         <!-- ----- -->
         <div class="select select_play">
           <div class="select__header">
-            <span>Играть онлайн</span>
+            <span>Играть <span class="not_important">онлайн</span></span>
             <img src="./img/chevron_dropmenu.svg" alt="chevron">
           </div>
           <!-- -- -->
           <div class="select__items">
-            <a href="#" class="select__item">Играть sweet bonanza 1win </a>
-            <a href="#" class="select__item">Играть sweet bonanza pin-up </a>
-            <a href="#" class="select__item">Играть sweet bonanza FairSpin</a>
+            <a href="#" class="select__item">Играть sweet bonanza <span>1win</span> </a>
+            <a href="#" class="select__item">Играть sweet bonanza <span>pin-up</span> </a>
+            <a href="#" class="select__item">Играть sweet bonanza <span>FairSpin</span> </a>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
             <!-- ----- -->
             <div class="offer__body">
               <h1 class="offer__title">Bonanza Casino</h1>
-              <p>Bonanza casino: <b>$100 кешбека + бонусные спины</b></p>
+              <p class="offer__subdesc">Bonanza casino: <b>$100 кешбека + бонусные спины</b></p>
               <p class="offer__desc">
                 Только новые игроки. Приветственный бонус - 100% бонус на первый депозит до €/$/£200, если не указано
                 иное. Этот бонус применяется только к депозитам в размере €/$/£10 и выше! Все, что вам нужно сделать,
@@ -170,7 +170,7 @@
             <td class="db_title">Предлагаемые игры:</td>
             <td class="db_content">Slots, Blackjack, Roulette, Baccarat, VideoPoker, LiveGames, Bingo</td>
             <td class="db_title">Максимальный джекпот:</td>
-            <td class="db_content">Максимальный джекпот:</td>
+            <td class="db_content">3 000 000 $</td>
           </tr>
         </table>
       </section>
@@ -353,10 +353,30 @@
             </div>
           </div>
           <div class="pm_content">
-            <div class="pm_item">Первый плюс</div>
-            <div class="pm_item">Также плюс, но уже второй</div>
-            <div class="pm_item">Это уже третий плюс</div>
-            <div class="pm_item">Последний плюс, но может и нет</div>
+            <div class="pm_item">
+              <div class="pm_item__icon">
+                <img src="./img/page_brand/plus.svg" alt="plus icon">
+              </div>
+              <span>Первый плюс</span>
+            </div>
+            <div class="pm_item">
+              <div class="pm_item__icon">
+                <img src="./img/page_brand/plus.svg" alt="plus icon">
+              </div>
+              <span>Также плюс, но уже второй</span>
+            </div>
+            <div class="pm_item">
+              <div class="pm_item__icon">
+                <img src="./img/page_brand/plus.svg" alt="plus icon">
+              </div>
+              <span>Это уже третий плюс</span>
+            </div>
+            <div class="pm_item">
+              <div class="pm_item__icon">
+                <img src="./img/page_brand/plus.svg" alt="plus icon">
+              </div>
+              <span>Последний плюс, но может и нет</span>
+            </div>
           </div>
         </div>
         <div class="pm_block pm_block__minus">
@@ -367,10 +387,30 @@
             </div>
           </div>
           <div class="pm_content">
-            <div class="pm_item">Это минус, и он первый</div>
-            <div class="pm_item">Тут второй минус</div>
-            <div class="pm_item">По нумерации это третий</div>
-            <div class="pm_item">Четвертый минус</div>
+            <div class="pm_item">
+              <div class="pm_item__icon">
+                <img src="./img/page_brand/minus.svg" alt="icon minus">
+              </div>
+              <span>Это минус, и он первый</span>
+            </div>
+            <div class="pm_item">
+              <div class="pm_item__icon">
+                <img src="./img/page_brand/minus.svg" alt="icon minus">
+              </div>
+              <span>Тут второй минус</span>
+            </div>
+            <div class="pm_item">
+              <div class="pm_item__icon">
+                <img src="./img/page_brand/minus.svg" alt="icon minus">
+              </div>
+              <span>По нумерации это третий</span>
+            </div>
+            <div class="pm_item">
+              <div class="pm_item__icon">
+                <img src="./img/page_brand/minus.svg" alt="icon minus">
+              </div>
+              <span>Четвертый минус</span>
+            </div>
           </div>
         </div>
       </section>
@@ -525,7 +565,7 @@
           по всей стране и обеспечивает ее всеми необходимыми правилами.
         </p>
 
-        <div class="table__responsive">
+        <div class="table__responsive table__big">
           <table>
             <thead>
               <td>Первый пункт</td>
@@ -714,6 +754,67 @@
           <li>Приятно, граждане, наблюдать, как явные. Ещё больше текста</li>
           <li>Предварительные выводы утешительны</li>
         </ul>
+
+        <div class="table__responsive">
+          <table>
+            <thead>
+              <td>Первый пункт</td>
+              <td>Второй столбец</td>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Высокий уровень вовлечения.</td>
+                <td>Как принято считать.</td>
+              </tr>
+              <!-- ---- -->
+              <tr>
+                <td>Но граница обучения кадров.</td>
+                <td>С учётом сложившейся.</td>
+              </tr>
+              <!-- ---- -->
+              <tr>
+                <td>В рамках спецификации.</td>
+                <td>В своём стремлении.</td>
+              </tr>
+              <!-- ---- -->
+              <tr>
+                <td>Однозначно, представители.</td>
+                <td>Мы вынуждены.</td>
+              </tr>
+              <!-- ---- -->
+              <tr>
+                <td>Также как граница обучения.</td>
+                <td>Однозначно.</td>
+              </tr>
+              <!-- ---- -->
+              <tr>
+                <td>В рамках спецификации.</td>
+                <td>В частности.</td>
+              </tr>
+              <!-- ---- -->
+              <tr>
+                <td>С другой стороны.</td>
+                <td>А ещё ключевые.</td>
+              </tr>
+              <!-- ---- -->
+              <tr>
+                <td>Следует отметить, что граница.</td>
+                <td>Учитывая ключевые.</td>
+              </tr>
+              <!-- ---- -->
+              <tr>
+                <td>Значимость этих проблем.</td>
+                <td>Каждый из нас.</td>
+              </tr>
+              <!-- ---- -->
+              <tr>
+                <td>Каждый из нас понимает.</td>
+                <td>Принимая во внимание.</td>
+              </tr>
+              <!-- ---- -->
+            </tbody>
+          </table>
+        </div>
 
         <p>
           Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль
@@ -1082,7 +1183,9 @@
         </div>
       </div>
       <!-- ---- -->
-      <a href="#" class="orange_btn anim_btn" aria-label="кнопка играть">Играть сейчас</a>
+      <a href="#" class="sticky__btn" data-play-txt="play">
+        <div class="orange_btn anim_btn" aria-label="кнопка играть">Играть сейчас</div>
+      </a>
 
       <div class="sticky__close_btn">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

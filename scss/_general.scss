@@ -647,3 +647,25 @@ p {
     transform: translateY(0%);
   }
 }
+
+// ===========================
+
+.gray_btn {
+  background: #f2f2f5;
+  height: 50px;
+  width: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #b1b1b1;
+  transition: .3s;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 2px solid $green;
+    background: none;
+    color: $green;
+  }
+}
